@@ -1,1 +1,81 @@
-//css
+/* CSS for to-do list */
+body {
+    background: gray;
+}
+
+.container {
+    display: block;
+    width: 500px;
+    margin: 100px auto 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li * {
+    float: left;
+}
+
+li {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+/*Style for checkbox itom*/
+li > input[type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 10px;
+}
+
+li > label {
+    font-size: 18px;
+    line-height: 30px;
+    width: 300px;
+    padding: 0 0 0 11px;
+}
+
+button {
+    background: none;
+    border: 2px;
+    color: gold;
+    margin: 5px 0 0;
+    font-size: 15px;
+    width: 100px;
+}
+
+h1{
+    color: gold;
+    text-align: center;
+}
+
+h3{
+    color: gold;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 30px 0 10px;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+    padding: 15px;
+    height: 25px;
+    border: 2px solid;
+    border-radius: 200px;
+    font-size: 18px;
+    color: black;
+}
+
+input#new-task {
+    float: left;
+    width: 320px;
+}
+
+/* Style for completed tasks*/
+#completedBox label {
+    text-decoration: line-through;
+}
+
