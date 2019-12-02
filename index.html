@@ -1,33 +1,29 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>My To-do-list</title>
-
-  </head>
-  <body>
-    <h1>My schedule</h1>
+<html class="gr__aws_computerstudi_es"><head>
+    <meta charset="UTF-8">
+    <title>My To-Do-list</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <h1>To-do List</h1>
+    <h3>New Event</h3>
+    <audio id="sound" src="sound.wav"></audio>
     <div class="controlBar">
-      <input id="input" type="text" name="inputBox" placeholder="Student Name">
-      <button id="button" type="button" name="registerButton">Register Now</button>
+      <p>
+          <input id="inputBox" type="text" placeholder="Add a new event here"><button id="addButton">Add</button>
+      </p>
     </div>
+    <h3>Todo List</h3>
+    <ul id="incompletedBox">
+        <li><input type="checkbox"><label>Workout</label><button class="delete">Delete</button></li>
+        <li><input type="checkbox"><label>Do homework</label><button class="delete">Delete</button></li>
+    </ul>
+    <ul id="completedBox">
+    </ul>
+</div>
 
-    <div id="showbox">
-      <li>
-        <input type="checkbox" id="0">
-        Studying 8 AM
-        <button class="RemoveButton">Delete</button>
-      </li>
+<script type="text/javascript" src="index.js">
 
-    </div>
-  </body>
+</script>
+</body>
 </html>
-  <script type="text/javascript" src="i1.js"></script>
-
-
-
-<input type="text" class="input_out" disabled>
-<button class="EditButton">Edit</button>
-<button class="RemoveButton">Delete</button>
-
-prepend
